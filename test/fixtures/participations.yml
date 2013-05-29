@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game: 
+  role: 
+  team: 
+  ended_on: 2013-01-01 13:41:37
+
+two:
+  game: 
+  role: 
+  team: 
+  ended_on: 2013-01-01 13:41:37

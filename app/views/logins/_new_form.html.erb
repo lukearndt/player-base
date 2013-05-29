@@ -1,0 +1,15 @@
+<%= form_for @login, :validate => true do |f| %>
+
+  <div class="input-block-level">
+    <%= f.text_field :username, :placeholder => "Username" %>
+  </div>
+  
+  <div class="input-block-level">
+    <%= f.password_field :password, :placeholder => "Password" %>
+  </div>
+
+  <div class="actions">
+  	<%= f.submit "Sign in" %>
+  </div>
+
+<% end %>

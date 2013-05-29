@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  participation: 
+  equipment_item: 
+  ended_on: 2013-01-01 14:48:21
+
+two:
+  participation: 
+  equipment_item: 
+  ended_on: 2013-01-01 14:48:21

@@ -1,0 +1,15 @@
+call rails d model Manufacturer 
+call rails d model EquipmentType 
+call rails d model EquipmentItem 
+call rails d model EquipmentLoan 
+call rails d model Team 
+call rails d model Member 
+call rails d model EmergencyContact
+call rails d model RoleType
+call rails d model GameType 
+call rails d model Location 
+call rails d model Game 
+call rails d model Role 
+call rails d model TeamMembership 
+call rails d model Wage 
+call rails d model Participation

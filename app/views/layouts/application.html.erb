@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>PlayerBase</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+		      <div class="navbar-inner">
+		        <div class="container">
+		         <%= link_to 'PlayerBase', root_path, :class => 'brand' %>
+		          <div class="nav-collapse collapse">
+		            <% if logged_in? then %>
+		           		<ul class="nav">
+			            	<li><%= link_to 'Game Setup', new_game_path %></li>
+			            	<li><%= link_to 'Sign In', new_participation_path %></a></li>
+			            	<li><%= link_to 'Registration', new_member_path %></li>
+		    	        	<li><%= link_to 'Members', members_path %></a></li>
+		        	    	<li><%= link_to 'Teams', teams_path %></a></li>
+		            		<li><%= link_to 'Equipment', equipment_index_path %></li>
+		              		<li><%= link_to 'Admin', admin_index_path %></li>
+		              		<li><%= link_to 'Log out', logout_path %></li>  	
+		            	</ul>
+		            <% end %>
+		          </div><!--/.nav-collapse -->
+		        </div>
+		      </div>
+	    </div>
+		<div class="page_container">
+		    <div class="hero-unit">
+
+				<div id="page">
+
+					<%= yield %>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>

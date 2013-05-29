@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  is_leader: false
+  team: 
+  role: 
+  ended_on: 2013-01-01 14:16:03
+
+two:
+  is_leader: false
+  team: 
+  role: 
+  ended_on: 2013-01-01 14:16:03

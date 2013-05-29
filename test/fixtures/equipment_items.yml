@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  condition: MyString
+  equipment_type: 
+  ended_on: 2013-01-01 13:39:02
+
+two:
+  condition: MyString
+  equipment_type: 
+  ended_on: 2013-01-01 13:39:02

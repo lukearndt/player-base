@@ -1,0 +1,13 @@
+
+<% if @member.present? %>
+<p>
+  <strong>Name:</strong>
+  <%= @member.first_name %>
+  <%= @member.last_name %>
+  <br>
+</p>
+<% else %>
+<p>
+	Member who?
+</p>
+<% end %>

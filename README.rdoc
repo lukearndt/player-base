@@ -1,0 +1,1 @@
+Welcome to PlayerBase, a system designed to make it easier for sporting clubs to manage their activities.

@@ -1,0 +1,27 @@
+<h1>Listing examples</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Decimal field</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @examples.each do |example| %>
+  <tr>
+    <td><%= example.first_name %></td>
+    <td><%= example.last_name %></td>
+    <td><%= example.decimal_field %></td>
+    <td><%= link_to 'Show', example %></td>
+    <td><%= link_to 'Edit', edit_example_path(example) %></td>
+    <td><%= link_to 'Destroy', example, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Example', new_example_path %>

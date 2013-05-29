@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game_type: 
+  location: 
+  ended_on: 2013-01-01 13:41:03
+
+two:
+  game_type: 
+  location: 
+  ended_on: 2013-01-01 13:41:03
