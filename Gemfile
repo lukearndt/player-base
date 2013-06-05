@@ -11,7 +11,7 @@ gem 'sqlite3'
 
 gem 'jquery-rails'
 gem 'valid_email', :require => 'valid_email/email_validator'
-gem 'client_side_valid`ations'
+gem 'client_side_validations'
 gem 'webrick', '>= 1.3.1'
 gem 'bcrypt-ruby'
 
