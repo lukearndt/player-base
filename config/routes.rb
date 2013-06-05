@@ -10,7 +10,22 @@ PlayerBase::Application.routes.draw do
 
   root :to => 'home#index'
   
-  resources :home, :members, :teams, :roles, :games, :role_types, :emergency_contacts, :participations, :equipment, :admin, :users, :clients, :logins
+  resources :home, :teams, :role_types, :equipment, :admin
+
+  resources :clients do
+    resources :users do
+      resources :logins
+    end
+  end
+
+  resources :members do
+    resources :roles
+    resources :emergency_contacts
+  end
+
+  resources :games do
+    resources :participations
+  end
   
   match 'exit' => 'logins#destroy', :as => :logout
 
