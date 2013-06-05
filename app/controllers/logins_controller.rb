@@ -13,6 +13,7 @@ class LoginsController < ApplicationController
 
   def destroy
   	@_current_user = session[:current_user_id] = 0
+    @login.destroy
   	redirect_to root_path
   end
 

@@ -10,23 +10,23 @@ PlayerBase::Application.routes.draw do
 
   root :to => 'home#index'
   
-  resources :home, :teams, :role_types, :equipment, :admin
+  resources :home, :admin
 
-  resources :clients do
-    resources :users do
-      resources :logins
-    end
-  end
+  resources :clients
 
-  resources :members do
-    resources :roles
-    resources :emergency_contacts
-  end
+  resources :equipment, :teams, :role_types
 
-  resources :games do
-    resources :participations
-  end
+  resources :users 
+  resources :logins
   
+  resources :members 
+  resources :roles
+  resources :emergency_contacts
+  
+  resources :games
+  resources :participations
+  
+
   match 'exit' => 'logins#destroy', :as => :logout
 
   # The priority is based upon order of creation:
