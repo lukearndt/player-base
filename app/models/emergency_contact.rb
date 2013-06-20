@@ -5,7 +5,7 @@ class EmergencyContact < ActiveRecord::Base
   validates :first_name, :presence => true, :length => { :minimum => 2 }
   validates :last_name, :presence => true, :length => { :minimum => 2 }
   validates :phone_number, :presence => true, :length => { :is => 10 }
-  validates_email :email_address
+  validates :email_address, :email => true
 
   def full_name
   	return first_name + " " + last_name
