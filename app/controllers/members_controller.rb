@@ -29,4 +29,12 @@ class MembersController < ApplicationController
     end
       
   end
+
+  def edit
+    @member = Member.find(params[:id])
+    render :partial => 'form_edit'
+    
+  end
+
+
 end
